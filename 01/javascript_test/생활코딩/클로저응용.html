@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        for(var i = 0; i < 5; i++) {
+            arr[i] = function(id){
+                return function(){
+                    return id;
+                }
+            }(i);
+        }
+        for(var index in arr) {
+            console.log(arr[index]());
+        }
+
+        //글로벌 스코프
+        var d = 'x';
+
+        function outer(){
+            var a = 1;
+            console.log(a);
+            //스코프: console.log에 있는 a는 변수나 함수명을 가지고 거기에 들어있는 값을 찾을때 들여다본다.
+            //이 스코프는 outer에 속해 있고 outer의 범위이다.
+            //함수단위로 스코프가 생성된다.스코프의 기본은 함수단위이다.
+                function inner(){
+                    var a = 2;
+                    console.log(d);
+                }
+                inner();
+        }
+        outer();
+    </script>
+</body>
+</html>

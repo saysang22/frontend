@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "sass test",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "sang",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}
