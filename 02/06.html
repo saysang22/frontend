@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 3000px;
+    }
+    div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box_00 {
+        background: black;
+    }
+
+    .box_01 {
+        background: lemonchiffon;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        
+    }
+
+    .box_02 {
+        background: lightblue;
+        position: relative;
+        top: 200px;
+        left: 200px;
+
+    }
+
+
+    .box_03 {
+        background: lightsalmon;
+        width: 60px;
+        height: 120px;
+        position: fixed;
+        top: 200px;
+        right: 10px;
+    }
+
+    #header {
+        margin: 500px 0 0 50px;
+        width: 1000px;
+        height: 200px;
+        background: blanchedalmond;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+</style>
+<body>
+    <div class="box_00">box_00</div>
+    <div class="box_01">box_01</div>
+    <div class="box_02">box_02</div>
+    <div class="box_03">box_03</div>
+
+    <header id="header">
+        <h1 class="logo">로고입니다.</h1>
+    </header>
+</body>
+</html>

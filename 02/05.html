@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+    }
+
+    .clear::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    div {
+        height: 150px;
+        line-height: 150px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .box_01 {
+        background: darkgreen;
+        float: left;
+        /*상하 좌우*/
+        margin: 100px 50px;
+    }
+
+    .box_02 {
+        background: darkkhaki;
+        float: left;
+        /*상 좌우 하*/
+        margin: 50px 0 200px;
+    }
+    
+    .box_03 {
+        background: darkslateblue;
+        float: left;
+        margin: 50px 0 0 0;
+    }
+
+</style>
+<body>
+    <div class="box_01">box_01</div>
+    <div class="box_02">box_02</div>
+    <div class="box_03">box_03</div>
+</body>
+</html>

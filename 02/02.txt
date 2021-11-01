@@ -1,0 +1,19 @@
+UTF-8
+ - 우리나라 언어로 변환
+ - 홈페이지 언어 변환 형식
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+반응형할 때 필요함
+name="viewport" 
+ - 보여주는 형식
+content="width=device-width, initial-scale=1.0"
+ - 100%으로 보여줌
+
+HTML : 문서구조
+CSS: 스타일
+
+line-height: 행간 값과 글자의 크기를 합한것 적용
+
+absoute - 
+
+realative - 자기 기준으로 방향을 잡는다.

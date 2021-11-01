@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+    }
+
+    .clear::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    div {
+        height: 150px;
+        line-height: 150px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .box_01 {
+        background: darkgreen;
+        float: left;
+    }
+
+    .box_02 {
+        background: darkkhaki;
+        float: left;
+    }
+    
+    .box_03 {
+        background: darkslateblue;
+        float: left;
+    }
+    .right {
+        float: right;
+        background: rosybrown;
+        width: 450px;
+    }
+
+    .box_04 {
+        clear: both;
+        background: lightblue;
+        width: 100%;
+    }
+
+</style>
+<body>
+    <div class="right">
+        <div class="box_01">box_01</div>
+        <div class="box_02">box_02</div>
+        <div class="box_03">box_03</div>
+    </div>
+    <div class="box_04">dd</div>
+</body>
+</html>
